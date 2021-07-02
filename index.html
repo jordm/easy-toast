@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Toast Example</title>
+    <!-- include mdb.min.css -->
+</head>
+<body style="width:100%;">
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary" onclick="newToast()"">Make a new toast</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- Include jQuery and mdb.min.js here before easy-toast.js -->
+<script src="easy-toast.js" type="application/javascript"></script>
+
+<script>
+
+    function newToast(){
+        toastr.primary("Add custom options as third parameter","General Toast");
+    }
+
+    $(document).ready(function(){
+        toastr.success("Toast no title");
+
+        toastr.success("Toast with title", "Easy Toast");
+
+        toastr.error("This is my toast text");
+
+        toastr.warning("This is my toast text");
+
+        toastr.info("This is my toast text");
+    });
+
+</script>
+</html>
