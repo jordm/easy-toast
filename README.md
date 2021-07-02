@@ -1,6 +1,6 @@
 # Easy Toast
-## MDB 4 like toasts for MDB5
-MDB4 like toast implementation using MDB5 and jQuery 3.5.1
+
+MDB4 like toast implementation for MDB5 using jQuery 3.5.1
 
 I am in no way affiliated with MDBootstrap or claim their software as my own.
 
